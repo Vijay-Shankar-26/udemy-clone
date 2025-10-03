@@ -151,7 +151,7 @@ opacity: 1;
     top: 40%;
     left: 50%;
     animation-name: zoom3;
-    animation-duration: 1s;
+    animation-duration: 2s;
 opacity: 0;
 animation-fill-mode: forwards;
 }
@@ -201,7 +201,7 @@ opacity: 1;
     top: 45%;
     left: 55%;
 animation-name: zoom1;
-    animation-duration: 2s;
+    animation-duration: 1s;
 opacity: 0;
 animation-fill-mode: forwards;
 }

@@ -69,6 +69,10 @@ cursor: pointer;
 background-color: lightgrey;
 }
 
+.navbar__s4{
+   display: none;
+}
+
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -111,8 +115,10 @@ display: none;
     border: solid #A435F0 1px;
 }
 
-.sale-image{
+.sale-image img{
     position: relative;
+    width: 100%;
+    max-width: 100%
 }
 
 .sale-image__offer{
@@ -125,7 +131,7 @@ position: absolute;
 top: 25%;
 left: 10%;
 animation-name: zoom;
-animation-duration: 2s;
+animation-duration: 1s;
 opacity: 0;
 animation-fill-mode: forwards;
 }
@@ -141,86 +147,6 @@ opacity: 1;
 }
 }
 
-.sale-image__dot1{
-    width: 30px;
-    height: 30px;
-    border: solid red 3px;
-    border-radius: 30px;
-    background-color: black;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    animation-name: zoom3;
-    animation-duration: 2s;
-opacity: 0;
-animation-fill-mode: forwards;
-}
- @keyframes zoom3{
-0%{
-transform: scale(0);
-opacity: 0;
-}
-100%{
-transform: scale(1);
-opacity: 1;
-}
- }
-.sale-image__dot2{
-    width: 14px;
-    height: 14px;
-    border: solid red 3px;
-    border-radius: 30px;
-    background-color: black;
-    position: absolute;
-    top: 43%;
-    left: 53%;
-animation-name: zoom2;
-    animation-duration: 1.5s;
-opacity: 0;
-animation-fill-mode: forwards;
-}
-
-@keyframes zoom2{
-0%{
-transform: scale(0);
-opacity: 0;
-}
-100%{
-transform: scale(1);
-opacity: 1;
-}
- }
-
-.sale-image__dot3{
-    width: 10px;
-    height: 10px;
-    border: solid red 3px;
-    border-radius: 30px;
-    background-color: black;
-    position: absolute;
-    top: 45%;
-    left: 55%;
-animation-name: zoom1;
-    animation-duration: 1s;
-opacity: 0;
-animation-fill-mode: forwards;
-}
-
-@keyframes zoom1{
-0%{
-transform: scale(0);
-opacity: 0;
-}
-100%{
-transform: scale(1);
-opacity: 1;
-}
- }
-
-.sale-image{
-    width: 100px;
-
-}
 
 .recommended{
     padding: 10px;
@@ -235,7 +161,9 @@ opacity: 1;
 }
 
 .course-card{
-    width: 260px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course-card img{
@@ -296,3 +224,25 @@ opacity: 1;
     display: flex;
     justify-content: space-between;
 }
+
+/*Media Query*/
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .course-card{
+        flex-basis: 40%;
+    }
+  .navbar__s2, .navbar__s3{
+    display: none;
+  }.navbar__s4{
+    display: block;
+    align-content: flex-end;
+  }
+  .navbar__s2{
+    display: flex;
+  }
+    }

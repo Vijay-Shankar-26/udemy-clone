@@ -150,8 +150,21 @@ opacity: 1;
     position: absolute;
     top: 40%;
     left: 50%;
+    animation-name: zoom3;
+    animation-duration: 1s;
+opacity: 0;
+animation-fill-mode: forwards;
 }
-
+ @keyframes zoom3{
+0%{
+transform: scale(0);
+opacity: 0;
+}
+100%{
+transform: scale(1);
+opacity: 1;
+}
+ }
 .sale-image__dot2{
     width: 14px;
     height: 14px;
@@ -161,8 +174,23 @@ opacity: 1;
     position: absolute;
     top: 43%;
     left: 53%;
-
+animation-name: zoom2;
+    animation-duration: 1.5s;
+opacity: 0;
+animation-fill-mode: forwards;
 }
+
+@keyframes zoom2{
+0%{
+transform: scale(0);
+opacity: 0;
+}
+100%{
+transform: scale(1);
+opacity: 1;
+}
+ }
+
 .sale-image__dot3{
     width: 10px;
     height: 10px;
@@ -172,8 +200,23 @@ opacity: 1;
     position: absolute;
     top: 45%;
     left: 55%;
-
+animation-name: zoom1;
+    animation-duration: 2s;
+opacity: 0;
+animation-fill-mode: forwards;
 }
+
+@keyframes zoom1{
+0%{
+transform: scale(0);
+opacity: 0;
+}
+100%{
+transform: scale(1);
+opacity: 1;
+}
+ }
+
 .sale-image{
     width: 100px;
 
